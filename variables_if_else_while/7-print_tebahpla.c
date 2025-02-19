@@ -1,19 +1,14 @@
 #include <stdio.h>
 /**
- * main - Entry main dowhile numbers
+ * main - Entry point working with putchar
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int number;
+	char letter;
 
-	number = 48;
-
-	do {
-		putchar(number);
-		number++;
-
-	} while (number <= 57);
+	for (letter = 'z'; letter >= 'a'; letter--)
+		putchar(letter);
 
 	putchar('\n');
 	return (0);
