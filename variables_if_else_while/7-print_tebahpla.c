@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
  * main - Entry main dowhile numbers
  * Return: Always 0 (Success)
