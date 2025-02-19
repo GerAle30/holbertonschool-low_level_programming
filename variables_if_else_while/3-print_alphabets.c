@@ -1,4 +1,4 @@
-i#include <stdio.h>
+#include <stdio.h>
 /**
  * main - Entry point working with putchar
  * Return: Always 0 (Success)
