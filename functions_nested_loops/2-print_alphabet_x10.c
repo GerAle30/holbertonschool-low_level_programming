@@ -12,7 +12,7 @@ void print_alphabet_x10(void)
 	while (cou < 10)
 	{
 		/* this print the alphabet with a newlines*/
-		for (abc - 'a'; abc <= 'z' ; abc++)
+		for (abc = 'a'; abc <='z' ; abc++)
 			_putchar(abc);
 		_putchar('\n');
 		cou++;
