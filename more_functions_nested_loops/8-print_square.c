@@ -2,7 +2,7 @@
 
 /**
  * Print_square - -prints a square of '#' characters
- * @size: size pf the square
+ * @size: size of the square
  */
 void print_square(int size)
 {
