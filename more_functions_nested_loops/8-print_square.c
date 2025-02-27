@@ -10,17 +10,17 @@ void print_square(int size)
 
 	if (size <= 0)
 	{
-		_putchar('\n');
+		_putchar('\n'); /* If size is 0 or negative, print a newline */
 	}
 	else
 	{
-		for (i = 0; i < size; i++)
+		for (i = 0; i < size; i++) /* loop through rows */
 		{
-			for (b = 0; b < size; b++)
+			for (b = 0; b < size; b++) /* loop through columns */
 			{
-				_putchar('#');
+				_putchar('#'); /* Print a '#' character */
 			}
-			_putchar('\n');
+			_putchar('\n'); /* Newline after each row */
 		}
 	}
 }
