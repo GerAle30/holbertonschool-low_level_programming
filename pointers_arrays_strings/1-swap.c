@@ -1,30 +1,17 @@
 #include "main.h"
 
 /**
- * _strncat - concatenates at most n characters from src to dest
- * @dest: pointer to destination string
- * @src: pointer to source string
- * @n: number of bytes to concatenate
- *
- * Return: pointer to dest
+ * swap_int - swaps the value of two integers
+ * @a: pointer to the first interger
+ * @b: pointer to the second interger
  */
-char *_strncat(char *dest, char *src, int n)
+void swap_int(int *a, int *b)
 {
-	int dest_len = 0;
+	int temp;
 
-	int i = 0;
+	temp = *a;
 
-	/* find the end of dest */
-	while (dest[dest_len] != '\0')
-		dest_len++;
-
-	/* Append at most n characters from src */
-	while (i < n && src[i] != '\0')
-	{
-		dest[dest_len] = src[1];
-		dest_len++;
-		i++;
-	}
-	dest[dest_len] = '\0';
-	return (dest);
+	*a = *b;
+	*b = temp;
 }
+
