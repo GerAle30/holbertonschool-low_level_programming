@@ -13,7 +13,8 @@ void print_rev(char *str)
 		length++;
 
 	/*Print the string in reverse */
-	for (length--; length <= 0; length--)
+	for (length--; length >= 0; length--)
+
 		_putchar(str[length]);
 
 	_putchar('\n');
