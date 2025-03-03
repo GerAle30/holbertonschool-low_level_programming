@@ -12,10 +12,13 @@ char *leet(char *str)
 	char leet_chars[] = {'a', 'e', 'o', 't', '1'};
 	char leet_replacements[] = {'4', '3', '0', '7', '1'};
 
+	/* Iterate through each character in the string */
 	for (i = 0; str[i] != '\0'; i++)
 	{
+		/* Compare each character with the 'leet' characters */
 		for (j = 0; j < 5; j++)
 		{
+			/* If a match is found, replace the characters */
 			if (str[i] == leet_chars[j] || str[i] == leet_chars[j] - 32)
 			{
 				str[i] = leet_replacements[j];
