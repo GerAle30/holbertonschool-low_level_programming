@@ -2,8 +2,8 @@
 
 /**
  * _strncat - concatenates at most n characters from src to dest
- * @dest:pointer to destination string
- * 2src:pointer to source strign
+ * @dest: pointer to destination string
+ * @src: pointer to source string
  * @n: number of bytes to concatenate
  *
  * Return: pointer to dest
