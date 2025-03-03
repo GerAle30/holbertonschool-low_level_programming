@@ -13,7 +13,7 @@ char *_strcat(char *dest, const char *src)
 	char *dest_ptr = dest;
 
 	/* Move to the end od the destination string */
-	while (*src != '\0')
+	while (*dest_ptr != '\0')
 		dest_ptr++;
 
 	/* Append the source strign to the destination string */
