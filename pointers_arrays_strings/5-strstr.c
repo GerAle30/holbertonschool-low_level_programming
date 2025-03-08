@@ -3,25 +3,38 @@
 #include <stdio.h> /* For printf */
 
 /**
- * _strpbrk - locate the first occurrence in a string of any caracter
- * from another string
- * @s: string to search
- * @accept: characters to search for in s
+ * _strstr - locate a substring in a string
+ * @haystack: the strign to search
+ * @needle: the substring to find
  *
- * Return: pointer to the first occurrence of any character from accept
- * in s, or NULL if no such character is found
+ * Return: pointer to the first occurrence of needle in haystack,
+ *  or NULL if needle is not found
  */
-char *_strpbrk(char *s, char *accept)
+char *_strstr(char *haystack, char *needle)
 {
-	char *a; /* Declare the pointer 'a' outside the loop */
+	char *h = haystack;
+	char *n = needle;
 
-	for (; *s; s++) /* Iterate through the string of s */
+	if (*n == '\0')
 	{
-		for (a = accept; *a; a++)
+		return (haystack);
+	}
+	while (*h)
+	{
+		char *start = h;
+				n = needle;
+
+		while (*h && *n && *h == *n)
 		{
-			if (*s == *a)
-				return (s); /* Return pointer to the first matching character */
+			h++;
+			n++;
 		}
+
+		if (!*n)
+		{
+			return (start);
+		}
+		h = start + 1;
 	}
 	return (NULL);
 }
