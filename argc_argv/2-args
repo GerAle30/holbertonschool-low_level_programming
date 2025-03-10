@@ -1,0 +1,2 @@
+ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-args.c -o args
+julien@ubuntu:~/argc, argv$ ./args 
