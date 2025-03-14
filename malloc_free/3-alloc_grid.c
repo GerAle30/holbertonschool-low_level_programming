@@ -2,10 +2,10 @@
 #include <stdlib.h>
 
 /**
- * alloc_grid = Allocates a 2D array of integers
- * and initializes all elements to.0
- * @width: Number of columns in the grid
- * @heights: Number of rows in the grid
+ * alloc_grid - Allocates a 2D array of integers
+ * and initializes all elements to 0
+ *@width:Number of columns in the grid
+ *@height:Number of rows in the grid
  *
  * Return: Pointer to the allocated grid, or NULL on failure
  */
