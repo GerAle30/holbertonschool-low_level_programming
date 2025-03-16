@@ -1,10 +1,10 @@
 #include "main.h"
-#include <stlib.h>
+#include <stdlib.h>
 #include <string.h>
 
 /**
  * string_nconcat - Concatenates two strings up to n characters from s2
- * @s: The first string
+ * @s1: The first string
  * @s2: the second string
  * @n: The number of characters to concatenate from s2
  *
@@ -13,7 +13,7 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	size_t len1, len2 i;
+	size_t len1, len2, i;
 	char *concat;
 
 	/* Handle NULL inputs */
