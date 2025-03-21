@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
 	if (!operation)
 	{
 		printf("Error\n");
-		exit(98);
+		exit(99);
 	}
 
 	result = operation(num1, num2);
