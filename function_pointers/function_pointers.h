@@ -1,4 +1,5 @@
 #include <stddef.h>
+
 #ifndef FUNCTION_POITNERS_H
 #define FUNCTION_POINTERS_H
 
