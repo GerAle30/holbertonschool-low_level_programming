@@ -1,10 +1,23 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-/* Prototipos de funciones para manipulacione bits */
+#include <unistd.h>
+#include <stdlib.h>
+#include <stddef.h>
 
-/*Pone el prototipo de _putchar por si lo necesitas */
-int _putchar(char c);
+
+/**
+ * _putchar - writes the character c to stdout
+ * @c: The character to print
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
+int _putchar(char c)
+{
+	return (write(1, &c, 1));
+}
+/* Prototipos de funciones para manipulacione bits */
 
 /*Devuelve el valor de un bit en unca posicion dada */
 int get_bit(unsigned long int n, unsigned int index);
@@ -22,5 +35,7 @@ int toggle_bit(unsigned long int *n, unsigned int index);
 unsigned int count_bits(unsigned long int n);
 
 unsigned int binary_to_uint(const char *b);
+
+void print_binary(unsigned long int n);
 
 #endif /* MAIN_H */
