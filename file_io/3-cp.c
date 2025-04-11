@@ -14,6 +14,7 @@
 void error_exit(int code, const char *message, const char *file)
 {
 	dprintf(STDERR_FILENO, "%s %s\n", message, file);
+	dprintf(STDERR_FILENO, "%s\n", message);
 	exit(code);
 }
 
@@ -30,7 +31,7 @@ int main(int argc, char *argv[])
 	char buffer[BUF_SIZE];
 
 	if (argc != 3)
-		error_exit(97, "Usage: cp file_from file_to", "");
+		error_exit(97, "Usage: cp file_from file_to", NULL);
 
 	fd_from = open(argv[1], O_RDONLY);
 	if (fd_from == -1)
