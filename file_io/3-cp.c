@@ -14,7 +14,6 @@
 void error_exit(int code, const char *message, const char *file)
 {
 	dprintf(STDERR_FILENO, "%s %s\n", message, file);
-	dprintf(STDERR_FILENO, "%s\n", message);
 	exit(code);
 }
 
